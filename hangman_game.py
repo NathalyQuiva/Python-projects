@@ -1,9 +1,10 @@
-from words import palabras
 import string
-from ahorcado_diagramas import vidas_diccionario_visual
-
-
 import random 
+
+
+from ahorcado_diagramas import vidas_diccionario_visual
+from words import palabras
+
 
 def obtener_palabra_válida(párametropalabras):
     #Select a word at random.
@@ -54,6 +55,15 @@ def ahorcado():
             print("\n Ya escogiste esa letra.Por favor escoge una letra nueva")
         else:
             print("\n Esta letra no es válida")
+
+    if vidas == 0:
+        print(vidas_diccionario_visual[vidas])
+        print(f"Ahorcado. Perdiste. Lo lamento mucho. La palabra era: {palabra}")
+    else:
+        print(f"Excelente adivinaste la palabra {palabra}! ")
+
+ahorcado()
+
 
 
 # Pregunta de la aplicacion de Python:
