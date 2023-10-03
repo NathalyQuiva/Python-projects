@@ -23,8 +23,20 @@ def búsqueda_binaria(lista, objetivo, límite_inferior=None, límite_superior=N
     if lista[punto_medio] == objetivo:
         return punto_medio
     elif objetivo < punto_medio:
-        return búsqueda_binaria(lista, objetivo, límite_inferior, límite_superior = punto_medio)
+        return búsqueda_binaria(lista, objetivo, límite_inferior, límite_superior = punto_medio-1)
+    else: 
+        return búsqueda_binaria(lista, objetivo, punto_medio + 1, límite_superior)
 
 
+if __name__ =='__main__':
+    lista = [1,3,5,10,12]
+    print(búsqueda_binaria(lista, 10))
 # lista = [1,3,5,10,12]
 # print(búsqueda_ingenua(lista, 17))
+    tamaño = 10000
+    conjunto_inicial = set()
+
+    while len(conjunto_inicial) < tamaño:
+        conjunto_inicial.add(random.randint(-3*tamaño,3*tamaño))
+
+    lista_ordenada = sorted(list(conjunto_inicial))
