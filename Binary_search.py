@@ -53,4 +53,3 @@ if __name__ =='__main__':
         fin = time.time()
         print(f"Tiempo de búsqueda binaria: {fin - inicio} segundos.")
 
-#try to decrease the complexity 
