@@ -52,3 +52,5 @@ if __name__ =='__main__':
         búsqueda_binaria(lista_ordenada, objetivo)
         fin = time.time()
         print(f"Tiempo de búsqueda binaria: {fin - inicio} segundos.")
+
+#try to decrease the complexity 
