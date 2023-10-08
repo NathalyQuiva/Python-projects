@@ -10,7 +10,7 @@ def búsqueda_ingenua(lista, objetivo):
 
 
 def búsqueda_binaria(lista, objetivo, límite_inferior=None, límite_superior=None):
-# The list must be ordered in ascending way
+
     if límite_inferior is None:
         límite_inferior = 0
     if límite_superior is None: 
